@@ -7,6 +7,7 @@ project(hector_mapping_nav)
 find_package(catkin REQUIRED COMPONENTS roscpp nav_msgs visualization_msgs tf message_filters laser_geometry tf_conversions message_generation)
 
 ## System dependencies are found with CMake's conventions
+## Remove signals to allow succesful buil in noetic
 #find_package(Boost REQUIRED COMPONENTS thread signals)
 include_directories(${Boost_INCLUDE_DIRS})
 
